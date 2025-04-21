@@ -1,5 +1,5 @@
 import React, { useState} from "react";
-import video from "../assets/bidiyo.mp4";
+
 const Home = () => {
   const Click = () => {
     console.log("Button clicked");
@@ -31,17 +31,26 @@ const Home = () => {
 // -------------------------------------
   return (
     <div
-      className="bg-gradient-to-br from-indigo-800 via-purple-900 to-gray-900
-
-h-fit w-screen capitalize"
+      className="relative w-full h-screen overflow-hidden"
+    >   {/* Background Video */}
+    <video
+      autoPlay
+      loop
+      muted
+      playsInline
+      className="absolute top-0 left-0 w-full h-full object-cover z-0"
     >
+      <source src="/video.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+      {/* Overlay (optional for dark filter) */}
+      <div className="absolute top-0 left-0 w-full h-full bg-black/40 z-10"></div>
 
 
 
 
-
-
-
+      <div className="relative z-20 text-white">
 {/* ------------------------------------- UseState ka Use 😘---------------------------------------------------------------------------       */}
  {/* BOX 1 - */}
 
@@ -105,7 +114,9 @@ h-fit w-screen capitalize"
 
 
 </div>
-<hr className="border-t-2 border-purple- mt-5" />
+
+
+<hr className="border-t-2 mt-5 " />
 
 {/* ------------------------------------------------------------------------------------------------------------------------------ */}
 
@@ -131,13 +142,8 @@ h-fit w-screen capitalize"
   <h1>You have {product.length} items in your cart</h1>
 )} */}
 {/* ----------------------------------------------------------------------------------------------------------------------------------- */}
-<div className="flex justify-center items-center">
-  
-  <div className="flex  justify-center items-center mt-5 mb-5"> 
+</div> {/* End of z-20 content wrapper */}
 
-<video src={video} autoPlay loop muted   className="w-full h-50"></video>
-
-</div></div>
     </div>
   );
 };
