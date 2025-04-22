@@ -1,4 +1,4 @@
-React Revision Checklist (Basics + Important):
+# React Revision Checklist (Basics + Important):
 
 1. DOM Tree
 
@@ -25,7 +25,7 @@ React Revision Checklist (Basics + Important):
 
 
 
-JavaScript Concepts Required in React:
+# JavaScript Concepts Required in React:
 
 9. useState Hook
 
@@ -55,7 +55,7 @@ JavaScript Concepts Required in React:
 
 
 
-React Functionality:
+# React Functionality:
 
 18. Event Handling (onClick, onChange, etc.)
 
@@ -67,7 +67,7 @@ React Functionality:
 
 
 
-Extra Important Concepts (Next Step after Basics):
+# Extra Important Concepts (Next Step after Basics):
 
 21. Conditional Rendering (? :, &&)
 

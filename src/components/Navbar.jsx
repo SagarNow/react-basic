@@ -17,7 +17,7 @@ const Navbar = () => {
 <p>Today is {date.toDateString()}</p>
 </div>
 <div className="text-amber-300 ml-96 ">
-<h1 className="text-4xl  "> hellow world !!  </h1></div>
+<h1 className="text-4xl  "> hello world !!  </h1></div>
 
 
         {/* alt + shift + f = code achha formate ho jata he  */}

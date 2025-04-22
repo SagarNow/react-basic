@@ -6,10 +6,10 @@ const Home = () => {
     alert("Button clicked");
   };
   
-  const [a, b] = useState (1)
 
 
-  const [c, d] = useState (0)
+
+  
 
   // objects - array 
 
