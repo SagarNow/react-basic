@@ -1,7 +1,23 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 
+import Music from "../assets/XXXTENTACION.mp3";
 
 const State = () => {
+ 
+  const audioRef = useRef(new Audio(Music)); // persist the same audio object
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  const togglePlay = () => {
+    const audio = audioRef.current;
+    if (isPlaying) {
+      audio.pause();
+    } else {
+      audio.play();
+    }
+    setIsPlaying(!isPlaying);
+  };
+
+
   const [a, b] = useState(1);
 const [c, d] = useState(0);
   return (
@@ -50,6 +66,15 @@ const [c, d] = useState(0);
 " onClick={ () =>d(c+2
 )}
 > Click Me </button></div>
+ 
+<button
+        onClick={togglePlay}
+        className=" h-8 w-35 bg-green-600 hover:bg-green-400 rounded-md shadow-lg px-4 py-2 flex justify-center items-center text-white"
+      >
+        {isPlaying ? "Pause Music" : "Play Music"}
+      </button>
+
+
 
 </div>
 
