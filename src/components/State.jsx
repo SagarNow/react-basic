@@ -23,7 +23,7 @@ const [c, d] = useState(0);
   return (
     <>
       <div className="background bg-gradient-to-t from-black via-purple-900 to-black min-h-screen w-screen">
-        <h1 className=" ml-75 text-[200px] font-bold text-purple-800 opacity-10 z-0 select-none">
+        <h1 className=" ml-75 text-[100px] font-bold text-purple-800 opacity-10 z-0 select-none">
           Sagar Now
         </h1>
 
